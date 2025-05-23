@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pollution Awareness</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(135deg, #e0f7fa 0%, #fffde7 100%);
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 1rem 1rem 1rem;
+            background: #b2ebf2;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: #00796b;
+            letter-spacing: 2px;
+            animation: fadeInDown 1s;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 0.5rem;
+            animation: fadeInDown 1.5s;
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            background: #fff;
+            border-radius: 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            padding: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            animation: fadeIn 1.5s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0;}
+            to { opacity: 1;}
+        }
+        .info {
+            flex: 1 1 320px;
+        }
+        .info h2 {
+            color: #009688;
+            margin-top: 0;
+            font-size: 1.6rem;
+        }
+        .info ul {
+            padding-left: 1.2rem;
+            margin: 1rem 0;
+        }
+        .info li {
+            margin-bottom: 0.5rem;
+            font-size: 1.05rem;
+        }
+        .irl-pics {
+            flex: 1 1 250px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+        .irl-pics img {
+            width: 100%;
+            max-width: 260px;
+            border-radius: 18px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            object-fit: cover;
+            transition: transform 0.3s;
+            background: #e0f2f1;
+        }
+        .irl-pics img:hover {
+            transform: scale(1.04) rotate(-2deg);
+        }
+        .cute-cloud {
+            position: absolute;
+            top: 40px;
+            left: 30px;
+            width: 90px;
+            height: 60px;
+            z-index: 2;
+            animation: cloudMove 10s linear infinite alternate;
+        }
+        @keyframes cloudMove {
+            0% { left: 30px; }
+            100% { left: 80vw; }
+        }
+        .cute-cloud svg {
+            width: 100%;
+            height: 100%;
+        }
+        .footer {
+            text-align: center;
+            padding: 1.2rem;
+            color: #888;
+            font-size: 1rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 700px) {
+            .container {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            .irl-pics img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cute-cloud">
+        <!-- Cute animated cloud SVG -->
+        <svg viewBox="0 0 90 60">
+            <ellipse cx="35" cy="35" rx="30" ry="20" fill="#fff" stroke="#b2ebf2" stroke-width="2"/>
+            <ellipse cx="55" cy="30" rx="20" ry="15" fill="#fff" stroke="#b2ebf2" stroke-width="2"/>
+            <ellipse cx="45" cy="45" rx="25" ry="15" fill="#fff" stroke="#b2ebf2" stroke-width="2"/>
+            <!-- Cute face -->
+            <circle cx="40" cy="40" r="2" fill="#333"/>
+            <circle cx="50" cy="40" r="2" fill="#333"/>
+            <path d="M43 45 Q45 48 47 45" stroke="#333" stroke-width="1.2" fill="none"/>
+            <ellipse cx="38" cy="43" rx="1" ry="0.5" fill="#f8bbd0"/>
+            <ellipse cx="52" cy="43" rx="1" ry="0.5" fill="#f8bbd0"/>
+        </svg>
+    </div>
+    <header>
+        <h1>Let's Talk About Pollution</h1>
+        <p>Together, we can make our planet cleaner and happier!</p>
+    </header>
+    <main>
+        <div class="container">
+            <div class="info">
+                <h2>What is Pollution?</h2>
+                <p>
+                    Pollution is the introduction of harmful substances into our environment. It affects air, water, and land, and can harm humans, animals, and plants.
+                </p>
+                <h2>Types of Pollution</h2>
+                <ul>
+                    <li><b>Air Pollution:</b> Smoke from factories, vehicles, and burning waste.</li>
+                    <li><b>Water Pollution:</b> Dumping waste into rivers, lakes, and oceans.</li>
+                    <li><b>Land Pollution:</b> Littering, plastic waste, and chemicals in soil.</li>
+                </ul>
+                <h2>How Can We Help?</h2>
+                <ul>
+                    <li>Reduce, reuse, and recycle.</li>
+                    <li>Use public transport or cycle.</li>
+                    <li>Plant more trees.</li>
+                    <li>Avoid single-use plastics.</li>
+                </ul>
+            </div>
+            <div class="irl-pics">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Air pollution in city">
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Plastic pollution in water">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcK27e0Cr1SvuHnuegVisIVIDYIcFE6PR4UA&s" alt="Land pollution with garbage">
+            </div>
+        </div>
+    </main>
+    <div class="footer">
+        &copy; 2025 Pollution Awareness | Made By Aaditya <span style="color:#f8bbd0;">&#10084;</span>
+    </div>
+</body>
+</html></div></svg>
